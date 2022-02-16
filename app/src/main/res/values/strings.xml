@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Imp\'s Adventure Simulator</string>
+    <string name="action_settings">Settings</string>
+    <string name="normal_dice">Dices to use</string>
+    <string name="special_dice">Lucky dices</string>
+    <string name="stars_number">Stars</string>
+    <string name="position">Position</string>
+
+    <string name="use_smart">Lucky Dices Optimization</string>
+    <string name="use_no_speical_in_19">No luck in 19</string>
+    <string name="use_lucky_card">Optimize lucky card</string>
+    <string name="use_karma_out">Save from Karma</string>
+
+    <string name="parameters_label">Simulation Parameters</string>
+    <string name="start_simulation">Start Simulation</string>
+    <string name="stop_simulation">Stop Simulation</string>
+    <string name="simulation_stoped">Simulation Stopped</string>
+
+    <string name="simulation_stop_text">¿Do you want to cancel the simulation?</string>
+    <string name="simulation_stop_title">Cancel Simulation</string>
+
+    <string name="information">Information</string>
+    <string name="hint1">Imp’s Adventure Simulator will allow you to simulate the dice rolls to estimate your chances of achieving the different rewards.</string>
+    <string name="hint2">You must enter the number of normal dices you are planning to use, your amount of lucky dice, and your current position in the game (square number, from 1-20, 0 is starting position). The app will perform thousands of simulations to predict your expected results.</string>
+    <string name="hint3">Based in the results provided you will be able to decide with more precision how much dices to buy with gems or money.</string>
+    <string name="copyright">HestinGames © 2020</string>
+    <string name="simulating_label">Simulation in progress</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="average">Average</string>
+    <string name="probabilities">Probabilities</string>
+    <string name="results">Simulation Results</string>
+    <string name="simulations">simulations</string>
+    <string name="mushroom_level">Level</string>
+    <string name="simulating">Simulating...</string>
+    <string name="required_fields">All fields are mandatory</string>
+    <string name="mushroom_field_validation">The level of the Mushroom Hut must be between 1 and 3</string>
+
+    <string name="strategies">Strategies</string>
+    <string name="active_strategies">Active strategies</string>
+    <string name="pass_strategies">Passive strategies</string>
+    <string name="optimize_lucky_dices_hint">When you have only one Lucky Dice it will be used to get another one in the next round</string>
+    <string name="strategy_not_in_19_hint">Not use the lucky die to get another lucky die when you are in box 19.</string>
+    <string name="strategy_smart_lucky_card_hint">Use the lucky dice (with the number 5) if you have a Lucky Card active to get another lucky die and advance 10 squares.</string>
+    <string name="strategy_karma_out_hint">Use the extra lucky die to get out of the Karma house.</string>
+
+    <string name="strategy_not_in_19_help">No luck in 19: Not use the lucky die to get another lucky die when you are in box 19.</string>
+    <string name="strategy_smart_lucky_card_help">Optimize lucky card: Use the lucky dice (with the number 5) if you have a Lucky Card active to get another lucky die and advance 10 squares.</string>
+    <string name="strategy_karma_out_help">Save from Karma: Use the extra lucky die to get out of the Karma house.</string>
+    <string name="strategy_active_hint">All active strategies can be enabled or disabled in the settings.</string>
+
+    <string name="pass_strategy_save_dice_hint">When you only have one dice left and you are one or two stars away from getting the next reward, it will save it to assure the two stars from it.</string>
+    <string name="pass_strategy_end_get_dices_hint">When you don\'t have more normal dice and you still have lucky dice, they will try to optimize to obtain more dice. If not possible, number 6 will be used.</string>
+
+
+    <string name="position_validation">Position must be between 0 and 20</string>
+    <string name="help">Help</string>
+    <string name="donate">Donations</string>
+    <string name="donate_text1">Any help is good!</string>
+    <string name="donate_text2">We are a small group of developers and players of Idle Heroes that seeks to contribute to the community with useful tools for a better performance in the game. If you appreciate our work and want to help us continue to improve this application and develop more tools in the future, you can contribute in any of the following ways:</string>
+    <string name="parameters">Parameters:</string>
+    <string name="save">Save</string>
+    <string name="configs">Settings</string>
+    <string name="configs_saved">Settings saved correctly.</string>
+    <string name="configs_alert">1,000,000 simulations can be very aggressive to your phone, be careful.</string>
+
+    <string name="config_text">You can configure the amount of simulations to perform. Please keep in mind that the more simulations the more demanding it will be for your mobile phone.</string>
+    <string name="config_text_strategy">You can activate or deactivate the strategies to be used in the simulation, keep in mind that each strategy can be positive or negative depending on the situation.</string>
+    <string name="config_text_strategy_2">Please keep in mind that more number of active strategies, the more demanding the simulation process will be for your device.</string>
+
+    <string name="board_positions">Board Positions:</string>
+    <string name="help_text_1">Imp’s Adventure Simulator is a simulator for the Imp’s Adventure event in Idle Heroes game. Its objective is to calculate as accurately as possible what are the possibilities of obtaining the different rewards offered from the parameters provided by you.</string>
+    <string name="help_parameters_1">Square number on the board where your Imp is currently located.</string>
+    <string name="help_parameters_2">Number of stars you have earned so far.</string>
+    <string name="help_parameters_3">Number of normal dice you plan to use.</string>
+    <string name="help_parameters_4">Amount of lucky dice you have.</string>
+    <string name="help_parameters_5">Current level of square number 4, where the first Mushroom Hut is.</string>
+    <string name="help_parameters_7">Current level of square number 11, where the second Mushroom Hut is.</string>
+    <string name="help_parameters_8">Current level of square number 18, where the third Mushroom Hut is.</string>
+    <string name="help_parameters_6">Lucky Dices Optimization: This option applies the following strategy: When you have a single lucky dice, this dice will only be used to fall back into Lucky Hut (square number 20) and thus obtain a new lucky dice. This guarantees that every turn on the board you will have at least one "extra" roll.</string>
+    <string name="help_text_3">In Settings you can specify the number of simulations you want to perform. Keep in mind that the more simulations the more demanding it will be for your mobile phone.</string>
+    <string name="help_text_4">This application was developed for free for the Idle Heroes community. Many of the graphic resources and terms used are property of DHGames and all rights are reserved to them.</string>
+    <string name="help_text_5">Any questions or suggestions you can write to us at:</string>
+    <string name="help_text_6">If you want to help us to continue improving this application and to be able to create new tools for the Idle Heroes community, you can do it here:</string>
+
+    <string name="close_confirm_tile">Exit Application</string>
+    <string name="close_confirm_text">Are you sure you want to exit de application?</string>
+    <string name="yes">yes</string>
+    <string name="no">No</string>
+    <string name="of">of</string>
+    <string name="email">hestingames@gmail.com</string>
+    <string name="version">Version 1.16</string>
+    <string name="resources">Estimated Resources</string>
+    <string name="paypal3">I want to help!</string>
+    <string name="paypal2">Due to Google policies, we cannot insert our PayPal link to receive donations. If you really want to support this project, send us an email and we will reply with the necessary information so that you can help us. Thank you</string>
+    <string name="resources_hint">The resources obtained and the levels of the squares before the simulation are not taken in count.</string>
+    <string name="help_subject">Assistance Request</string>
+    <string name="donate_subject">Google Play Gift Card Donation</string>
+    <string name="donate_paypal_subject">I want to make a donation</string>
+    <string name="email_chooser">Choose an Email client:</string>
+
+    <string name="activeTarot">Active tarot card</string>
+    <string name="noActiveTarot">No active card</string>
+    <string name="obtainedCards">Total obtained cards</string>
+    <string name="activeCardsHelp">Active card: Allows you to specify if you have an active tarot card at the time of the simulation.</string>
+
+    <string name="paypal">PayPal Donation</string>
+    <string name="giftcard">Google Play Gift Card</string>
+    <string name="giftcard_hint">You can help us continue growing by sending us Google Play Gift Card code to our email address.</string>
+
+    <string name="shared_title">*Try this amazing simulator for Imp\'s Adventure Idle Heroes event.*</string>
+
+    <string name="shared_via">Share in:</string>
+
+    <string name="rate_title">Do you like this app?</string>
+    <string name="rate_body">Please rate us on Google Play</string>
+    <string name="rate_yes">Yes, I want!</string>
+    <string name="rate_late">Maybe Later</string>
+    <string name="rate_never">No, thanks</string>
+
+</resources>

@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Simulador de Imp\'s Adventure</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="normal_dice">Dados a usar</string>
+    <string name="special_dice">Dados de la suerte</string>
+    <string name="stars_number">Stars</string>
+    <string name="position">Posición</string>
+
+    <string name="use_smart">Lucky Dices Optimization</string>
+    <string name="use_no_speical_in_19">No hay suerte en el 19</string>
+    <string name="use_lucky_card">Optimizar tarjeta de la suerte</string>
+    <string name="use_karma_out">Salvarse del Karma</string>
+
+    <string name="parameters_label">Parámetros de la Simulación</string>
+    <string name="start_simulation">Iniciar Simulación</string>
+    <string name="stop_simulation">Detener Simulación</string>
+
+    <string name="simulation_stoped">Simulación Interrumpida</string>
+    <string name="simulation_stop_text">¿Quieres cancelar la simulación?</string>
+    <string name="simulation_stop_title">Cancelar Simulación</string>
+
+    <string name="information">Información</string>
+    <string name="hint1">El Simulador de Imp’s Adventure te va a permitir simular las tiradas de dados para estimar las probabilidades de ganar los distintos premios.</string>
+    <string name="hint2">Debe introducir la cantidad de dados normales que piensa usar, la cantidad de dados de la suerte que ha conseguido, y la posición actual en el tablero (número de casilla, entre 1-20, y 0 la posición inicial). La aplicación va a realizar miles de simulaciones (configurable) para estimar los posibles resultados.</string>
+    <string name="hint3">Basado en estos resultados estimados, podrá decidir con mayor precisión qué cantidad de dados comprar con gemas o dinero.</string>
+    <string name="copyright">HestinGames © 2020</string>
+    <string name="simulating_label">Simulación en curso</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="average">Promedio</string>
+    <string name="probabilities">Probabilidades</string>
+    <string name="results">Resultados de la Simulación</string>
+    <string name="simulations">Simulaciones</string>
+    <string name="mushroom_level">Nivel</string>
+    <string name="simulating">Simulando...</string>
+    <string name="required_fields">Todos los campos son obligatorios</string>
+    <string name="mushroom_field_validation">El nivel de la casilla del Hongo debe estar entre 1 y 3</string>
+
+    <string name="strategies">Estrategias</string>
+    <string name="active_strategies">Estrategias Activas</string>
+    <string name="pass_strategies">Estrategias Pasivas</string>
+    <string name="optimize_lucky_dices_hint">Cuando se tiene un único dado de la suerte, este es utilizado solamente para obtener otro.</string>
+    <string name="strategy_not_in_19_hint">No utilizar el dado de la suerte para obtener otro dado de la suerte cuando estas en la casilla 19.</string>
+    <string name="strategy_smart_lucky_card_hint">Utilizar el dado de la suerte (con el numero 5) con la tarjeta de la suerte activa para obtener otro dado de la suerte y avanzar 10 casillas.</string>
+    <string name="strategy_karma_out_hint">Utilizar el dado de la suerte extra para salir de la casa del Karma.</string>
+
+    <string name="strategy_not_in_19_help">No hay suerte en el 19: No utilizar el dado de la suerte para obtener otro dado de la suerte cuando estas en la casilla 19.</string>
+    <string name="strategy_smart_lucky_card_help">Optimizar tarjeta de la suerte: Utilizar el dado de la suerte (con el numero 5) con la tarjeta de la suerte activa para obtener otro dado de la suerte y avanzar 10 casillas.</string>
+    <string name="strategy_karma_out_help">Salvarse del Karma: Utilizar el dado de la suerte extra para salir de la casa del Karma.</string>
+    <string name="strategy_active_hint">Todas las estrategias activas se pueden activar o desactivar en las configuraciones.</string>
+
+    <string name="pass_strategy_save_dice_hint">Cuando solo te queda un dado y estas a una o dos estrellas de obtener la siguiente recompensa, guardarlo para obtener dos estrellas por él.</string>
+    <string name="pass_strategy_end_get_dices_hint">Cuando no tienes más dados normales y aun tienes dados de la suerte se intentarán optimizar para obtener más dados. Si no es posible se usará el número 6.</string>
+
+    <string name="position_validation">La posición debe estar entre 0 and 20</string>
+    <string name="help">Ayuda</string>
+    <string name="donate">Donaciones</string>
+    <string name="donate_text1">¡Cualquier ayuda es buena!</string>
+    <string name="donate_text2">Somos un pequeño grupo de desarrolladores que busca ayudar a la comunidad de Idle Heroes con herramientas útiles para un mejor desempeño en el juego. Si aprecias nuestro trabajo y quieres ayudar para seguir mejorando esta aplicación y desarrollar nuevas en el futuro, puedes ayudarnos a crecer por cualquiera de las siguientes vías:</string>
+    <string name="parameters">Parámetros:</string>
+    <string name="save">Guardar</string>
+    <string name="configs">Ajustes</string>
+    <string name="configs_saved">Ajustes guardados correctamente.</string>
+    <string name="configs_alert">1 000 000 de simulaciones puede ser muy agresivo para su teléfono, tenga cuidado.</string>
+
+    <string name="config_text">Puede configurar la cantidad de simulaciones del juego que desee realizar. Tenga en cuenta que mientras más simulaciones, más demandante será el proceso para su teléfono móvil.</string>
+    <string name="config_text_strategy">Puede activar o desactivar las estrategias a utilizar en la simulación, tenga en cuenta que cada estrategia puede ser positiva o negativa según la situación.</string>
+    <string name="config_text_strategy_2">Mientras más estrategias activas, más costoso será el proceso de simulación para su dispositivo.</string>
+
+    <string name="board_positions">Posiciones del Tablero:</string>
+    <string name="help_text_1">Imp’s Adventure Simulator es un simulador para el evento Imp’s Adventure dentro del juego Idle Heroes. Su objetivo es calcular, con la mayor precisión posible, cuáles son sus posibilidades de obtener los distintos premios disponibles a partir de los parámetros ofrecidos por usted.</string>
+    <string name="help_parameters_1">Número de la casilla donde se encuentra su Imp actualmente.</string>
+    <string name="help_parameters_2">Número de estrellas que ha ganado hasta el momento.</string>
+    <string name="help_parameters_3">Cantidad de dados normales que piensa emplear.</string>
+    <string name="help_parameters_4">Cantidad de dados de la suerte que posee.</string>
+    <string name="help_parameters_5">Nivel actual de la casilla número 4, donde está el primer hongo.</string>
+    <string name="help_parameters_7">Nivel actual de la casilla número 11, donde está el segundo hongo.</string>
+    <string name="help_parameters_8">Nivel actual de la casilla número 18, donde está el último hongo.</string>
+    <string name="help_parameters_6">Optimizar dados de la suerte: Cuando se tiene un solo dado de la suerte, este dado se utilizará únicamente para caer nuevamente en la Casa del Dado de la Suerte (casilla #20), para así obtener un nuevo dado de la suerte. Esto garantiza que en cada vuelta al tablero tendrá al menos una tirada "adicional".</string>
+    <string name="help_text_3">En los ajustes podrá especificar la cantidad de simulaciones que desea realizar. Tenga en cuenta que mientras más simulaciones se realicen, más demandante será el proceso para su teléfono.</string>
+    <string name="help_text_4">Esta aplicación fue desarrollada de manera gratuita para la comunidad de Idle Heroes. Muchos de los recursos gráficos y los términos que se utilizan son propiedad de DHGames y todos los derechos son reservados a ellos.</string>
+    <string name="help_text_5">Cualquier duda o sugerencia puede escribirnos a:</string>
+    <string name="help_text_6">Si quiere ayudarnos a seguir mejorando esta aplicación y a poder crear nuevas herramientas para la comunidad de Idle Heroes hágalo aquí:</string>
+    <string name="close_confirm_tile">Salir de la Aplicación</string>
+    <string name="close_confirm_text">¿Está seguro que quiere salir de la aplicación?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="of">de</string>
+    <string name="email">hestingames@gmail.com</string>
+    <string name="version">Versión 1.16</string>
+    <string name="resources">Recursos Estimados</string>
+    <string name="paypal3">¡Quiero Ayudar!</string>
+    <string name="paypal2">Por políticas de Google no podemos poner el enlace a nuestro PayPal para recibir donaciones, si realmente quiere apoyar este proyecto envíenos un correo y le responderemos con los datos necesarios para que pueda ayudarnos. Gracias.</string>
+    <string name="resources_hint">No se tienen en cuenta los recursos obtenidos ni el nivel de las casillas antes de la simulación.</string>
+    <string name="help_subject">Solicitud de Asistencia</string>
+    <string name="donate_subject">Donación de Tarjeta de Regalo de Google Play</string>
+    <string name="donate_paypal_subject">Quiero hacer una donación</string>
+    <string name="email_chooser">Selecciona un cliente de correo:</string>
+
+    <string name="activeTarot">Tarjeta de tarot activa</string>
+    <string name="noActiveTarot">Ninguna tarjeta activa</string>
+    <string name="obtainedCards">Total de tarjeta obtenidas</string>
+    <string name="activeCardsHelp">Tarjeta activa: Permite especificar si tienes una tarjeta del tarot activa en el momento de realizar la simulación.</string>
+
+    <string name="paypal">Donación con PayPal</string>
+    <string name="giftcard">Tarjeta de Regalo de Google Play</string>
+    <string name="giftcard_hint">Puedes ayudarnos a seguir creciendo enviándonos el código de una tarjeta de regalo de Google Play a nuestra dirección de correo electrónico.</string>
+
+    <string name="shared_title">*Prueba este emulador genial para el evento Imp\'s Adventure del Idle Heroes.*</string>
+
+    <string name="shared_via">Compartir en:</string>
+
+    <string name="rate_title">¿Te gusta la aplicación?</string>
+    <string name="rate_body">Por favor valóranos en Google Play</string>
+    <string name="rate_yes">¡Si Quiero!</string>
+    <string name="rate_late">Despues</string>
+    <string name="rate_never">No quiero</string>
+
+
+
+
+</resources>

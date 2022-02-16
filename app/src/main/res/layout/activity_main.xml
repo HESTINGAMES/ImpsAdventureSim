@@ -1,0 +1,2483 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="376dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/results">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <LinearLayout
+                    android:id="@+id/help_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1250dp"
+                        android:background="@drawable/cont5"
+                        android:visibility="visible"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="304dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:drawableStart="@drawable/special_dices_hint"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:gravity="center_vertical"
+                            android:text="@string/help_parameters_4"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                        <TextView
+                            android:id="@+id/help_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/help"
+                            android:textAllCaps="true"
+                            android:textColor="#FDFDFE"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="304dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:drawableStart="@drawable/mushrooms18_hint"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:gravity="center_vertical"
+                            android:text="@string/help_parameters_8"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.472"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="304dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:drawableStart="@drawable/mushrooms11_hint"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:gravity="center_vertical"
+                            android:text="@string/help_parameters_7"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.472"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="304dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:drawableStart="@drawable/mushrooms4_hint"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:gravity="center_vertical"
+                            android:text="@string/help_parameters_5"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.472"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="304dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:drawableStart="@drawable/stars_number_hint"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:gravity="center_vertical"
+                            android:text="@string/help_parameters_2"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="304dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:drawableStart="@drawable/position_hint"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:gravity="center_vertical"
+                            android:text="@string/help_parameters_1"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.472"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="304dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="8dp"
+                            android:drawableStart="@drawable/normal_dice_hint"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/help_parameters_3"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.512"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="301dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/parameters"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.512"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="302dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/help_text_1"
+                            android:textSize="13dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/help_label" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="305dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/board_positions"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.457"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="305dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/activeCardsHelp"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="305dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/help_text_3"
+                            android:textSize="13dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="305dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/help_text_4"
+                            android:textSize="13dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="305dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/help_text_5"
+                            android:textSize="13dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="305dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:clickable="true"
+                            android:fontFamily="@font/poetsenone"
+                            android:onClick="sendMailHelp"
+                            android:text="@string/email"
+                            android:textColor="#3F51B5"
+                            android:textSize="13dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="305dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:clickable="false"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/help_text_6"
+                            android:textSize="13dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="300dp"
+                            android:layout_height="250dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView18"
+                            app:srcCompat="@drawable/position_map" />
+
+                        <ImageView
+                            android:layout_width="137dp"
+                            android:layout_height="76dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginBottom="14dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.483"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/hestin" />
+
+                        <Button
+                            android:layout_width="127dp"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:onClick="donate"
+                            android:text="@string/donate"
+                            android:textAllCaps="false"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView5"
+                            app:srcCompat="@drawable/select_card" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="580dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/cont7png"
+                        android:visibility="visible"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/help_label_strategies"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/strategies"
+                            android:textAllCaps="true"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView47"
+                            android:layout_width="305dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/active_strategies"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#6B1B02"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.514"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/help_label_strategies" />
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="305dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/pass_strategies"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#6B1B02"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.542"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="294dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/help_parameters_6"
+                            android:textAlignment="textStart"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+                        <TextView
+                            android:id="@+id/textView39"
+                            android:layout_width="294dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/strategy_karma_out_help"
+                            android:textAlignment="textStart"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+                        <TextView
+                            android:id="@+id/textView45"
+                            android:layout_width="294dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/strategy_active_hint"
+                            android:textAlignment="textStart"
+                            android:textColor="#661C02"
+                            android:textSize="12dp"
+                            android:textStyle="italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+                        <TextView
+                            android:id="@+id/textView43"
+                            android:layout_width="294dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/pass_strategy_save_dice_hint"
+                            android:textAlignment="textStart"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.521"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+                        <TextView
+                            android:layout_width="294dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/pass_strategy_end_get_dices_hint"
+                            android:textAlignment="textStart"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.521"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+                        <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="294dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/strategy_smart_lucky_card_help"
+                            android:textAlignment="textStart"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+                        <TextView
+                            android:id="@+id/textView40"
+                            android:layout_width="294dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/strategy_not_in_19_help"
+                            android:textAlignment="textStart"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView45"
+                            app:srcCompat="@drawable/separator" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/donate_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="340dp"
+                        android:background="@drawable/cont2"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/donate_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/donate"
+                            android:textAllCaps="true"
+                            android:textColor="#FDFDFE"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="180dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/donate_label"
+                            app:srcCompat="@drawable/dontions" />
+
+                        <TextView
+                            android:layout_width="305dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/donate_text2"
+                            android:textAlignment="center"
+                            android:textSize="13dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.51"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/donate_text1"
+                            android:textAlignment="center"
+                            android:textColor="#AA3303"
+                            android:textSize="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="@drawable/kiosco"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/donate_giftcard_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="68dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/giftcard"
+                            android:textAllCaps="true"
+                            android:textColor="#FDFDFE"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/_giftcardtextView31"
+                            android:layout_width="282dp"
+                            android:layout_height="65dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/giftcard_hint"
+                            android:textAlignment="center"
+                            android:textColor="#D2F8C837"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/donate_giftcard_label" />
+
+                        <Button
+                            android:layout_width="252dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:gravity="center"
+                            android:onClick="sendMailDonate"
+                            android:text="@string/email"
+                            android:textAlignment="center"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/_giftcardtextView31" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="@drawable/kiosco2"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/donate_paypal_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="65dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/paypal"
+                            android:textAllCaps="true"
+                            android:textColor="#FDFDFE"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="285dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/paypal2"
+                            android:textAlignment="center"
+                            android:textColor="#D2F8C837"
+                            android:textSize="13dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.523"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/donate_paypal_label" />
+
+                        <Button
+                            android:layout_width="244dp"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:onClick="sendMailDonatePaypal"
+                            android:text="@string/paypal3"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/form_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/cont1"
+                    android:visibility="visible"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/parameters_label"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="325dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/select_bg"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:spinnerMode="dialog"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/empty" />
+
+                    <TextView
+                        android:id="@+id/empty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/activeTarot"
+                        android:textAlignment="center"
+                        android:textColor="#5E5750"
+                        android:textSize="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+                    <Button
+                        android:id="@+id/simulateBtn"
+                        android:layout_width="227dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_span="3"
+                        android:fontFamily="@font/poetsenone"
+                        android:onClick="click"
+                        android:text="@string/start_simulation"
+                        android:textAllCaps="false"
+                        android:textColor="#F2414141"
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+                    <Button
+                        android:id="@+id/stopSimulateBtn"
+                        style="@style/cancelButton"
+                        android:layout_width="227dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_span="3"
+                        android:fontFamily="@font/poetsenone"
+                        android:onClick="cancelSimulation"
+                        android:text="@string/stop_simulation"
+                        android:textAllCaps="false"
+                        android:textColor="#F2FCF9F9"
+                        android:textSize="14dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+                    <TableLayout
+                        android:id="@+id/tableLayout2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="horizontal"
+                        android:stretchColumns="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="1">
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingEnd="5dp"
+                                android:stretchColumns="@string/config_text">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:text="@string/normal_dice"
+                                        android:textAlignment="center"
+                                        android:textColor="#5E5750"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_span="0"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:text="@string/special_dice"
+                                        android:textAlignment="center"
+                                        android:textColor="#5E5750"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:text="@string/position"
+                                        android:textAlignment="center"
+                                        android:textColor="#5E5750"
+                                        android:textSize="10dp" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <EditText
+                                        android:id="@+id/dice_number"
+                                        android:layout_width="95dp"
+                                        android:layout_height="32dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:background="@drawable/normal_dice"
+                                        android:ems="10"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:inputType="number"
+                                        android:maxLength="4"
+                                        android:paddingStart="10px"
+                                        android:paddingEnd="10px"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="false"
+                                        android:text="78"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="#F2292929"
+                                        android:textSize="14dp" />
+
+                                    <EditText
+                                        android:id="@+id/lucky_dice_number"
+                                        android:layout_width="95dp"
+                                        android:layout_height="32dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:background="@drawable/special_dice"
+                                        android:ems="10"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:hint="0"
+                                        android:inputType="number"
+                                        android:maxLength="4"
+                                        android:paddingStart="10px"
+                                        android:paddingEnd="10px"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="false"
+                                        android:text="0"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="#F2292929"
+                                        android:textSize="14dp" />
+
+                                    <EditText
+                                        android:id="@+id/position"
+                                        android:layout_width="95dp"
+                                        android:layout_height="32dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_span="0"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/position"
+                                        android:ems="10"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:hint="0"
+                                        android:inputType="number"
+                                        android:maxLength="4"
+                                        android:paddingStart="10px"
+                                        android:paddingEnd="10px"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="false"
+                                        android:text="0"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="#F2292929"
+                                        android:textSize="14dp" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="1">
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="3"
+                                android:paddingEnd="5dp"
+                                android:stretchColumns="*">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:text="@string/stars_number"
+                                        android:textAlignment="center"
+                                        android:textColor="#5E5750"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:text="@string/mushroom_level"
+                                        android:textAlignment="center"
+                                        android:textColor="#5E5750"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:text="@string/mushroom_level"
+                                        android:textAlignment="center"
+                                        android:textColor="#5E5750"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:text="@string/mushroom_level"
+                                        android:textAlignment="center"
+                                        android:textColor="#5E5750"
+                                        android:textSize="10dp" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <EditText
+                                        android:id="@+id/stars_number_edit"
+                                        android:layout_width="95dp"
+                                        android:layout_height="32dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:background="@drawable/stars_number"
+                                        android:ems="10"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:hint="0"
+                                        android:inputType="number"
+                                        android:maxLength="4"
+                                        android:paddingStart="10px"
+                                        android:paddingEnd="10px"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="false"
+                                        android:text="0"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="#F2292929"
+                                        android:textSize="14dp" />
+
+                                    <EditText
+                                        android:id="@+id/mushroom_1_Level_edit"
+                                        android:layout_width="55dp"
+                                        android:layout_height="32dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:background="@drawable/mushrooms4"
+                                        android:ems="10"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:hint="1"
+                                        android:inputType="number"
+                                        android:maxLength="1"
+                                        android:paddingStart="10px"
+                                        android:paddingEnd="10px"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="false"
+                                        android:text="1"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="#F2292929"
+                                        android:textIsSelectable="false"
+                                        android:textSize="14dp" />
+
+                                    <EditText
+                                        android:id="@+id/mushroom_2_Level_edit"
+                                        android:layout_width="55dp"
+                                        android:layout_height="32dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:background="@drawable/mushrooms11"
+                                        android:ems="10"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:hint="1"
+                                        android:inputType="number"
+                                        android:maxLength="1"
+                                        android:paddingStart="10px"
+                                        android:paddingEnd="10px"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="false"
+                                        android:text="1"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="#F2292929"
+                                        android:textSize="14dp" />
+
+                                    <EditText
+                                        android:id="@+id/mushroom_3_Level_edit"
+                                        android:layout_width="54dp"
+                                        android:layout_height="32dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:background="@drawable/mushrooms18"
+                                        android:ems="10"
+                                        android:fontFamily="@font/poetsenone"
+                                        android:hint="1"
+                                        android:inputType="number"
+                                        android:maxLength="1"
+                                        android:paddingStart="10px"
+                                        android:paddingEnd="10px"
+                                        android:selectAllOnFocus="true"
+                                        android:singleLine="false"
+                                        android:text="1"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="#F2292929"
+                                        android:textSize="14dp" />
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/spinner"
+                        app:srcCompat="@drawable/separator" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/results_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    android:background="@drawable/cont4"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/results_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/results"
+                        android:textAllCaps="true"
+                        android:textColor="#FDFDFE"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        app:layout_constraintTop_toBottomOf="@+id/results_label"
+                        tools:layout_editor_absoluteX="-381dp">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/average"
+                            android:textColor="#AE3C3C3C"
+                            android:textSize="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/min_result_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="65dp"
+                            android:layout_marginEnd="8dp"
+                            android:drawableStart="@drawable/star_16"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/min"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.086"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/average_result_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:drawableStart="@drawable/star_30"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="0"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                        <TextView
+                            android:id="@+id/max_result_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="65dp"
+                            android:layout_marginEnd="8dp"
+                            android:drawableStart="@drawable/star_16"
+                            android:fontFamily="@font/poetsenone"
+                            android:text="@string/max"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.932"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/probabilities"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:stretchColumns="*"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView38">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="0dp">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/star80" />
+
+                            <TextView
+                                android:id="@+id/prob80_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:text="0%"
+                                android:textAlignment="textStart"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/star200" />
+
+                            <TextView
+                                android:id="@+id/prob200_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:text="0%"
+                                android:textAlignment="textStart"
+                                android:textSize="14dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="0dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/star110" />
+
+                            <TextView
+                                android:id="@+id/prob110_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:text="0%"
+                                android:textAlignment="textStart"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/star230" />
+
+                            <TextView
+                                android:id="@+id/prob230_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:text="0%"
+                                android:textAlignment="textStart"
+                                android:textSize="14dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="0dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/star140" />
+
+                            <TextView
+                                android:id="@+id/prob140_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:text="0%"
+                                android:textAlignment="textStart"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/star260" />
+
+                            <TextView
+                                android:id="@+id/prob260_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:text="0%"
+                                android:textAlignment="textStart"
+                                android:textSize="14dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="0dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/star170" />
+
+                            <TextView
+                                android:id="@+id/prob170_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:text="0%"
+                                android:textAlignment="textStart"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/star300" />
+
+                            <TextView
+                                android:id="@+id/prob300_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:text="0%"
+                                android:textAlignment="textStart"
+                                android:textSize="14dp" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/information_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    android:background="@drawable/cont2"
+                    android:visibility="visible"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/information_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/information"
+                        android:textAllCaps="true"
+                        android:textColor="#FDFDFE"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_span="3"
+                        android:fontFamily="@font/poetsenone"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/hint2"
+                        android:textAlignment="textStart"
+                        android:textColor="#5B564E"
+                        android:textSize="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_span="3"
+                        android:fontFamily="@font/poetsenone"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/hint1"
+                        android:textAlignment="textStart"
+                        android:textColor="#5B564E"
+                        android:textSize="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/information_label" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_span="3"
+                        android:fontFamily="@font/poetsenone"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/hint3"
+                        android:textAlignment="textStart"
+                        android:textColor="#5B564E"
+                        android:textSize="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/resources_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/cont2"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/resources_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/resources"
+                        android:textAllCaps="true"
+                        android:textColor="#FDFDFE"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:stretchColumns="*"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView10">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="0dp">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="36dp"
+                                app:srcCompat="@drawable/spirit" />
+
+                            <TextView
+                                android:id="@+id/spirit_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:gravity="center_vertical"
+                                android:paddingTop="5dp"
+                                android:text="0"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="36dp"
+                                app:srcCompat="@drawable/chaos_stone" />
+
+                            <TextView
+                                android:id="@+id/chaos_stone_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:gravity="center_vertical"
+                                android:paddingTop="5dp"
+                                android:text="0"
+                                android:textSize="14dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="0dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="36dp"
+                                app:srcCompat="@drawable/magic_dut" />
+
+                            <TextView
+                                android:id="@+id/magic_dust_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:gravity="center_vertical"
+                                android:paddingTop="5dp"
+                                android:text="0"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="36dp"
+                                app:srcCompat="@drawable/star_shard_3" />
+
+                            <TextView
+                                android:id="@+id/shards_3_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:gravity="center_vertical"
+                                android:paddingTop="5dp"
+                                android:text="0"
+                                android:textSize="14dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="0dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="36dp"
+                                app:srcCompat="@drawable/monster_souls" />
+
+                            <TextView
+                                android:id="@+id/monster_soul_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:gravity="center_vertical"
+                                android:paddingTop="5dp"
+                                android:text="0"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="36dp"
+                                app:srcCompat="@drawable/star_shard_4" />
+
+                            <TextView
+                                android:id="@+id/shards_4_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:gravity="center_vertical"
+                                android:paddingTop="5dp"
+                                android:text="0"
+                                android:textSize="14dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="0dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="36dp"
+                                app:srcCompat="@drawable/promotion_stone" />
+
+                            <TextView
+                                android:id="@+id/promotion_stone_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:gravity="center_vertical"
+                                android:paddingTop="5dp"
+                                android:text="0"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="36dp"
+                                app:srcCompat="@drawable/star_shard_5" />
+
+                            <TextView
+                                android:id="@+id/shards_5_result_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poetsenone"
+                                android:gravity="center_vertical"
+                                android:paddingTop="5dp"
+                                android:text="0"
+                                android:textSize="14dp" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="24dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/resources_hint"
+                        android:textSize="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/resources_label" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView30"
+                        app:srcCompat="@drawable/separator" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cards_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="630dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/cont7png"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/obtainedCards"
+                        android:textAllCaps="true"
+                        android:textColor="#BA1F1F1F"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginEnd="16dp"
+                        android:stretchColumns="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:layout_width="105dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/lucky_card_full" />
+
+                            <ImageView
+                                android:layout_width="105dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/energy_card_full" />
+
+                            <ImageView
+                                android:layout_width="105dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/cloud_card_full" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lucky_card_result"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/energy_card_result"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cloud_card_result"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:layout_width="105dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/power_card_full" />
+
+                            <ImageView
+                                android:layout_width="105dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/rebirth_card_full" />
+
+                            <ImageView
+                                android:layout_width="105dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/trick_card_full" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/power_card_result"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/rebirth_card_result"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/trick_card_result"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:layout_width="105dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/copycat_card_full" />
+
+                            <ImageView
+                                android:layout_width="105dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/mushroom_card_full" />
+
+                            <ImageView
+                                android:layout_width="105dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/blight_card_full" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/copycat_card_result"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/mashroom_card_result"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/blight_card_result"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poetsenone"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/settings_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="520dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/cont6"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/settings_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/configs"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="316dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/config_text"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.517"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/settings_label" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="316dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/config_text_strategy_2"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="316dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/config_text_strategy"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+                    <SeekBar
+                        android:id="@+id/conf_sim_bar"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="284dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:indeterminate="false"
+                        android:max="4"
+                        android:progress="3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                    <TextView
+                        android:id="@+id/config_sim_alert_label"
+                        android:layout_width="309dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/configs_alert"
+                        android:textAlignment="center"
+                        android:textColor="#FCB10202"
+                        android:textSize="10dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/config_sim_label"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/config_sim_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="TextView"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/conf_sim_bar" />
+
+                    <Switch
+                        android:id="@+id/useNo19"
+                        android:layout_width="348dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_span="5"
+                        android:checked="false"
+                        android:drawableStart="@drawable/ic_info_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:hint="@string/optimize_lucky_dices_hint"
+                        android:paddingStart="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="20dp"
+                        android:switchTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/use_no_speical_in_19"
+                        android:textAllCaps="false"
+                        android:textColor="#C9383838"
+                        android:textSize="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/useSmart" />
+
+                    <Switch
+                        android:id="@+id/useLuckyCard"
+                        android:layout_width="348dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_span="5"
+                        android:checked="true"
+                        android:drawableStart="@drawable/ic_info_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:hint="@string/use_lucky_card"
+                        android:paddingStart="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="20dp"
+                        android:switchTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/use_lucky_card"
+                        android:textAllCaps="false"
+                        android:textColor="#C9383838"
+                        android:textSize="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/useNo19" />
+
+                    <Switch
+                        android:id="@+id/useKarmaOut"
+                        android:layout_width="348dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_span="5"
+                        android:checked="true"
+                        android:drawableStart="@drawable/ic_info_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:hint="@string/optimize_lucky_dices_hint"
+                        android:paddingStart="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="20dp"
+                        android:switchTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/use_karma_out"
+                        android:textAllCaps="false"
+                        android:textColor="#C9383838"
+                        android:textSize="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/useLuckyCard" />
+
+                    <Switch
+                        android:id="@+id/useSmart"
+                        android:layout_width="348dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_span="5"
+                        android:checked="true"
+                        android:drawableStart="@drawable/ic_info_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:hint="@string/optimize_lucky_dices_hint"
+                        android:paddingStart="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="20dp"
+                        android:switchTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/use_smart"
+                        android:textAllCaps="false"
+                        android:textColor="#C9383838"
+                        android:textSize="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+                    <Button
+                        android:id="@+id/save_config_btn"
+                        android:layout_width="181dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:onClick="saveConfig"
+                        android:text="@string/save"
+                        android:textAllCaps="false"
+                        android:textColor="#C6181818"
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.503"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/config_sim_alert_label"
+                        app:srcCompat="@drawable/separator" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/loading_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/cont3"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="@string/simulating_label"
+                        android:textAllCaps="true"
+                        android:textColor="#FDFDFE"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/loading"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="58dp"
+                        android:layout_height="54dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="322dp"
+                        android:layout_height="17dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/loading" />
+
+                    <TextView
+                        android:id="@+id/progress_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poetsenone"
+                        android:text="1 of 100000"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poetsenone"
+                    android:text="@string/copyright"
+                    android:textAlignment="center"
+                    android:textColor="#51FFFFFF"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="251dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="false"
+        android:contentDescription="@string/bottom_sheet_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoih" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poetsenone"
+        android:text="@string/version"
+        android:textColor="#63FFFFFF"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        style="@style/settingButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:onClick="config"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/help_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/help_button"
+        style="@style/helpButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:onClick="showHelp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_button" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        style="@style/homeButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:onClick="home"
+        android:scaleType="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/share_button"
+        style="@style/shareButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:onClick="shareApk"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help_button" />
+
+    <ImageButton
+        android:id="@+id/donate_button"
+        style="@style/donateButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:onClick="donate"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="323dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#3F51B5"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
